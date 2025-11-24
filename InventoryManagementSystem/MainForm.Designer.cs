@@ -46,6 +46,8 @@
             this.ToDoList = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnSchedule = new System.Windows.Forms.Button();
+            this.btnTrackSales = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -266,12 +268,40 @@
             this.label7.TabIndex = 27;
             this.label7.Text = "------------------------------------";
             // 
+            // btnSchedule
+            // 
+            this.btnSchedule.BackColor = System.Drawing.Color.White;
+            this.btnSchedule.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedule.ForeColor = System.Drawing.Color.Tomato;
+            this.btnSchedule.Location = new System.Drawing.Point(46, 679);
+            this.btnSchedule.Name = "btnSchedule";
+            this.btnSchedule.Size = new System.Drawing.Size(287, 63);
+            this.btnSchedule.TabIndex = 28;
+            this.btnSchedule.Text = "Schedule";
+            this.btnSchedule.UseVisualStyleBackColor = false;
+            this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
+            // 
+            // btnTrackSales
+            // 
+            this.btnTrackSales.BackColor = System.Drawing.Color.White;
+            this.btnTrackSales.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrackSales.ForeColor = System.Drawing.Color.Tomato;
+            this.btnTrackSales.Location = new System.Drawing.Point(46, 756);
+            this.btnTrackSales.Name = "btnTrackSales";
+            this.btnTrackSales.Size = new System.Drawing.Size(287, 63);
+            this.btnTrackSales.TabIndex = 29;
+            this.btnTrackSales.Text = "Track Sales";
+            this.btnTrackSales.UseVisualStyleBackColor = false;
+            this.btnTrackSales.Click += new System.EventHandler(this.btnTrackSales_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::InventoryManagementSystem.Properties.Resources.bg_updated_1;
             this.ClientSize = new System.Drawing.Size(1920, 1020);
+            this.Controls.Add(this.btnTrackSales);
+            this.Controls.Add(this.btnSchedule);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.clbTasks);
@@ -323,6 +353,8 @@
         private System.Windows.Forms.Label ToDoList;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnSchedule;
+        private System.Windows.Forms.Button btnTrackSales;
     }
 }
 

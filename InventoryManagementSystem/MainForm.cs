@@ -82,7 +82,7 @@ namespace InventoryManagementSystem
             SqlDataReader reader = cmd.ExecuteReader();
 
             int yPosition = 30;
-           
+
             if (reader.HasRows)
             {
                 while (reader.Read())
@@ -114,7 +114,7 @@ namespace InventoryManagementSystem
                 lblNoItems.Text = "No items are low on stock";
                 lblNoItems.Location = new Point(10, yPosition);
                 lblNoItems.AutoSize = true;
-               
+
             }
             reader.Close();
             connection.Close();
@@ -205,9 +205,22 @@ namespace InventoryManagementSystem
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             this.Close();
-    
-        }
-    
-    }
 
+        }
+
+        private void btnSchedule_Click(object sender, EventArgs e)
+        {
+            ScheduleForm scheduleForm = new ScheduleForm(); // open form of zej
+            scheduleForm.ShowDialog();
+            this.BringToFront();
+        }
+
+        private void btnTrackSales_Click(object sender, EventArgs e)
+        {
+            SalesForm salesForm = new SalesForm();
+                salesForm.ShowDialog();
+            this.BringToFront();
+        }
+
+    }
 }
